@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIT PRO — 5 Prompts Para Lucrar com IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0a',
+                        darkgray: '#1a1a1a',
+                        neonGreen: '#39FF14',
+                        neonBlue: '#00F5FF',
+                        neonPink: '#FF10F0',
+                        neonPurple: '#BC13FE',
+                        teal: '#00BFA5',
+                        orange: '#FF6600',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
+        }
+        
+        .neon-border {
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(57, 255, 20, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(57, 255, 20, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(57, 255, 20, 0);
+            }
+        }
+        
+        .glow-hover:hover {
+            text-shadow: 0 0 8px rgba(57, 255, 20, 0.8);
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-dark to-darkgray py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-center" style="color: #00BFA5">
+                    5 Prompts Para Ganhar Dinheiro com IA Ainda Hoje
+                </h1>
+                <h3 class="text-xl md:text-3xl text-gray-400 mb-8 max-w-3xl mx-auto text-center">
+                    Oferta exclusiva DE LANÇAMENTO - garanta já seu KIT PRO com 70% OFF!
+                </h3>
+                
+                <div class="flex flex-col items-center space-y-3 mb-10 text-lg">
+                    <div class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        <span>Domine a IA sem ser técnico</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        <span>Crie conteúdo que vende com 5 frases prontas</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">✅</span>
+                        <span>Comece ainda hoje, sem complicação</span>
+                    </div>
+                </div>
+                
+                <div class="bg-darkgray rounded-xl p-6 max-w-4xl mx-auto mb-10 border border-gray-800">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-left">
+                            <p class="text-gray-400 mb-2">Preço original: <span class="line-through text-gray-500">R$67</span></p>
+                            <p class="text-4xl font-bold text-neonGreen">R$47</p>
+                            <p class="text-neonPink text-sm mt-1">OFERTA EXCLUSIVA LANÇAMENTO!</p>
+                        </div>
+                        
+                        <div class="w-full md:w-auto">
+                            <a href="https://pay.hotmart.com/H100311726Q?checkoutMode=10" class="block w-full md:w-auto bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 pulse" target="_self">
+                                <i class="fas fa-bolt mr-2"></i> Quero meu KIT PRO por R$47
+                            </a>
+                            <p class="text-xs text-gray-400 mt-2">Entrega imediata após a compra</p>
+                            <div class="mt-4 text-sm text-gray-300 space-y-1">
+                                <div class="flex items-center">
+                                    <span class="text-neonGreen mr-2">✅</span>
+                                    <span>Resultados reais: mais de 87 cópias vendidas já na primeira semana</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-neonGreen mr-2">🔒</span>
+                                    <span>Garantia 7 dias Hotmart — risco zero!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mb-10">
+                    <img src="https://images.unsplash.com/photo-1522648695590-c76b02bfa717?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pessoa trabalhando com IA em ambiente futurista" class="rounded-xl border-2 border-neonPurple shadow-lg w-full max-w-2xl">
+                </div>
+
+                <div class="bg-darkgray rounded-xl p-6 max-w-4xl mx-auto mb-10 border border-neonGreen">
+                    <h3 class="text-xl font-bold text-center mb-4 text-neonBlue">Por que o KIT PRO é essencial para você?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="flex items-center">
+                            <span class="text-neonGreen mr-2">⚡</span>
+                            <span class="text-gray-300">Resultados em 24-48h</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-neonGreen mr-2">⚡</span>
+                            <span class="text-gray-300">Sem necessidade de conhecimento técnico</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-neonGreen mr-2">⚡</span>
+                            <span class="text-gray-300">Aplicação imediata</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-neonGreen mr-2">⚡</span>
+                            <span class="text-gray-300">Potencial de R$500-R$3.000/mês</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-neonGreen mr-2">⚡</span>
+                            <span class="text-gray-300">Clientes pagando por serviços simples</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-neonGreen mr-2">⚡</span>
+                            <span class="text-gray-300">Estratégias comprovadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-darkgray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="text-neonBlue">Você sabia que 90% das pessoas</span> 
+                    <span class="text-white">que tentam ganhar dinheiro com IA</span> 
+                    <span class="text-neonPink">fracassam nos primeiros 3 meses?</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">Não por falta de capacidade, mas porque perdem tempo com prompts genéricos que não geram resultados reais.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-neonGreen transition-all duration-300">
+                    <div class="text-neonPink text-3xl mb-4">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Prompt Genérico</h3>
+                    <p class="text-gray-400">"Crie um texto para vender meu produto" resulta em conteúdo fraco que não converte.</p>
+                </div>
+                
+                <div class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-neonBlue transition-all duration-300">
+                    <div class="text-neonBlue text-3xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tempo Perdido</h3>
+                    <p class="text-gray-400">Horas ajustando prompts sem saber o que realmente funciona no mercado.</p>
+                </div>
+                
+                <div class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-neonPurple transition-all duration-300">
+                    <div class="text-neonPurple text-3xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Resultados ZERO</h3>
+                    <p class="text-gray-400">Meses se passam e o dinheiro não entra, enquanto outros estão faturando.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-neonGreen">O KIT PRO resolve isso</span> 
+                    <span class="text-white">com prompts testados e aprovados</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">5 prompts específicos que geram dinheiro rápido, mesmo para iniciantes.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 hover:border-neonGreen transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-neonGreen text-dark p-2 rounded-full mr-4">
+                            <i class="fas fa-ghost text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Ghostwriting</h3>
+                    </div>
+                    <p class="text-gray-400">Prompt para criar conteúdo premium que clientes pagam caro por artigos, ebooks e posts.</p>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 hover:border-neonBlue transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-neonBlue text-dark p-2 rounded-full mr-4">
+                            <i class="fas fa-book text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Criação de Ebooks</h3>
+                    </div>
+                    <p class="text-gray-400">Prompt completo para gerar ebooks completos em horas, não semanas, para vender na Hotmart.</p>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 hover:border-neonPink transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-neonPink text-dark p-2 rounded-full mr-4">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">E-mail Marketing</h3>
+                    </div>
+                    <p class="text-gray-400">Prompt para sequências de vendas que convertem em até 5x mais do que e-mails comuns.</p>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 hover:border-neonPurple transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-neonPurple text-dark p-2 rounded-full mr-4">
+                            <i class="fas fa-palette text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Design com IA</h3>
+                    </div>
+                    <p class="text-gray-400">Prompt para criar designs profissionais no Canva em minutos para vender como freelancer.</p>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 hover:border-neonGreen transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-neonGreen text-dark p-2 rounded-full mr-4">
+                            <i class="fas fa-hashtag text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Redes Sociais</h3>
+                    </div>
+                    <p class="text-gray-400">Prompt para conteúdo viral que aumenta engajamento e atrai clientes automaticamente.</p>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 hover:border-neonBlue transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-neonBlue text-dark p-2 rounded-full mr-4">
+                            <i class="fas fa-gem text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Bônus Exclusivo</h3>
+                    </div>
+                    <p class="text-gray-400">Templates Notion para organizar seus projetos e clientes de forma profissional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-darkgray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-neonPink">Resultados reais</span> 
+                    <span class="text-white">de quem aplicou</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">Veja o que aconteceu quando pessoas como você usaram esses prompts:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-dark p-6 rounded-xl border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Depoimento" class="w-12 h-12 rounded-full mr-4 border-2 border-neonGreen">
+                        <div>
+                            <h3 class="font-bold">Carolina S.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Em 48h fechei meu primeiro cliente como ghostwriter usando o prompt do ebook. Ele pagou R$800 por 10 artigos que a IA criou em 1 hora!"</p>
+                </div>
+                
+                <div class="bg-dark p-6 rounded-xl border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Depoimento" class="w-12 h-12 rounded-full mr-4 border-2 border-neonBlue">
+                        <div>
+                            <h3 class="font-bold">Ricardo L.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"O prompt de e-mail marketing fez minha taxa de conversão saltar de 2% para 9%. Vendi R$3.200 em 5 dias com uma sequência que a IA criou em 15 minutos."</p>
+                </div>
+                
+                <div class="bg-dark p-6 rounded-xl border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Depoimento" class="w-12 h-12 rounded-full mr-4 border-2 border-neonPink">
+                        <div>
+                            <h3 class="font-bold">Amanda R.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Criei um ebook completo em 3 horas com o prompt do KIT PRO e já vendi 87 cópias na Hotmart. Fiz R$2.600 em 2 semanas sem ter escrito uma linha!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-darkgray p-8 rounded-xl border-l-4 border-neonGreen">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-neonGreen text-dark p-3 rounded-full mr-4">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Para quem é</h2>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="text-neonGreen mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Quem quer começar a ganhar dinheiro com IA mas não sabe por onde</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonGreen mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Freelancers que querem oferecer serviços premium usando IA</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonGreen mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Empreendedores que precisam de conteúdo de alta conversão rápido</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonGreen mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Quem quer múltiplas fontes de renda com pouco tempo disponível</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonGreen mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Pessoas que querem resultados práticos, não teoria sobre IA</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-darkgray p-8 rounded-xl border-l-4 border-neonPink">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-neonPink text-dark p-3 rounded-full mr-4">
+                            <i class="fas fa-times text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Para quem NÃO é</h2>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="text-neonPink mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Quem acha que vai ficar rico sem aplicar nada (não vendemos sonhos)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonPink mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Pessoas que não estão dispostas a copiar e colar prompts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonPink mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Quem prefere perder meses testando prompts ineficazes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonPink mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Especialistas em IA que já dominam criação de prompts avançados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="text-neonPink mr-3 mt-1">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <span class="text-gray-300">Quem não tem acesso a ChatGPT ou outras ferramentas de IA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="oferta" class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-darkgray to-dark">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-dark p-8 rounded-xl border-2 border-neonGreen neon-border">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-neonGreen">Comece a lucrar com IA</span> 
+                    <span class="text-white">hoje mesmo</span>
+                </h2>
+                
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                    <div class="text-left">
+                        <p class="text-gray-400 mb-2">Preço original: <span class="line-through text-gray-500">R$67</span></p>
+                        <p class="text-4xl font-bold text-neonGreen">R$47</p>
+                        <p class="text-neonPink text-sm mt-1">OFERTA EXCLUSIVA LANÇAMENTO!</p>
+                    </div>
+                    
+                    <div class="w-full md:w-auto">
+                        <a href="https://pay.hotmart.com/H100311726Q?checkoutMode=10" class="block w-full md:w-auto bg-neonGreen hover:bg-green-500 text-dark font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 pulse" target="_self">
+                            <i class="fas fa-bolt mr-2"></i> QUERO MEU KIT PRO AGORA!
+                        </a>
+                        <p class="text-xs text-gray-400 mt-2">Entrega imediata após a compra</p>
+                    </div>
+                </div>
+                
+                <div class="bg-darkgray p-4 rounded-lg border border-gray-800">
+                    <div class="flex items-center justify-center">
+                        <div class="bg-neonPurple text-dark p-2 rounded-full mr-3">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <p class="text-sm text-gray-300">Compra 100% segura • 7 dias de garantia • Acesso vitalício</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-darkgray p-8 rounded-xl border-2 border-neonBlue">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-neonBlue text-6xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Garantia Incondicional de 7 Dias</h3>
+                        <p class="text-gray-300 mb-4">Se em 7 dias você aplicar os prompts e não ver resultados, devolvemos cada centavo. Sem perguntas, sem burocracia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-darkgray">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/3">
+                    <img src="https://i.imgur.com/u5Hq7mk.jpeg" alt="Autor" class="rounded-xl border-4 border-neonPurple w-full">
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-2">
+                        <span class="text-neonPurple">Quem criou</span> 
+                        <span class="text-white">o KIT PRO?</span>
+                    </h3>
+                    <p class="text-gray-300 mb-4">Meu nome é Wendell Toscano. Sou especialista em Marketing Digital e Inteligência Artificial há mais de 6 anos. Já ajudei mais de 1.200 pessoas a transformarem ideias em renda real usando IA, mesmo começando do zero.</p>
+                    <p class="text-gray-300 mb-4">Depois de testar centenas de prompts e ver na prática o que funciona de verdade, criei este kit para entregar só o que dá resultado, de forma simples, rápida e acessível.</p>
+                    <p class="text-gray-300 mb-4">Acredito que qualquer pessoa pode usar a tecnologia a seu favor e faturar com inteligência, sem precisar ser expert ou perder tempo com o que não funciona.</p>
+                    <p class="text-gray-300 mb-4">Agora é sua vez. Aplique os prompts, siga o passo a passo e comece a ganhar com IA hoje mesmo.</p>
+                    <P CLASS="text-green-300">Garanta o seu KIT PRO agora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">
+                <span class="text-neonGreen">Perguntas</span> 
+                <span class="text-white">Frequentes</span>
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 faq-item">
+                    <button class="flex items-center justify-between w-full text-left faq-question">
+                        <h3 class="font-bold text-lg text-neonBlue">Preciso ter experiência com IA para usar?</h3>
+                        <i class="fas fa-chevron-down text-neonBlue transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-300 faq-answer hidden">
+                        <p>Não! O KIT PRO foi feito especialmente para iniciantes. Você só precisa copiar os prompts, colar no ChatGPT e ajustar com as informações do seu negócio ou cliente. É simples e qualquer pessoa consegue.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 faq-item">
+                    <button class="flex items-center justify-between w-full text-left faq-question">
+                        <h3 class="font-bold text-lg text-neonPink">Quanto tempo leva para ver resultados?</h3>
+                        <i class="fas fa-chevron-down text-neonPink transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-300 faq-answer hidden">
+                        <p>Depende da sua ação, mas muitos alunos relatam resultados em menos de 72h após aplicar os prompts. Alguns fecham o primeiro cliente no mesmo dia. O segredo é aplicar imediatamente.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 faq-item">
+                    <button class="flex items-center justify-between w-full text-left faq-question">
+                        <h3 class="font-bold text-lg text-neonGreen">Preciso comprar alguma ferramenta extra?</h3>
+                        <i class="fas fa-chevron-down text-neonGreen transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-300 faq-answer hidden">
+                        <p>Não! Os prompts funcionam com versão gratuita do ChatGPT. Os bônus usam Canva e Notion, que também têm versões gratuitas suficientes para começar.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 faq-item">
+                    <button class="flex items-center justify-between w-full text-left faq-question">
+                        <h3 class="font-bold text-lg text-neonPurple">Como recebo o KIT PRO após a compra?</h3>
+                        <i class="fas fa-chevron-down text-neonPurple transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-300 faq-answer hidden">
+                        <p>Imediatamente após a confirmação do pagamento, você recebe um e-mail com acesso à área de membros, onde pode baixar o conteúdo em PDF e ter acesso a compra dos bônus. Não há espera!</p>
+                    </div>
+                </div>
+                
+                <div class="bg-darkgray p-6 rounded-xl border border-gray-800 faq-item">
+                    <button class="flex items-center justify-between w-full text-left faq-question">
+                        <h3 class="font-bold text-lg text-neonBlue">Posso vender os serviços que criar com esses prompts?</h3>
+                        <i class="fas fa-chevron-down text-neonBlue transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-300 faq-answer hidden">
+                        <p>Sim! Todos os prompts foram criados para você usar profissionalmente e vender os resultados para clientes. Muitos alunos usam exatamente esses prompts para oferecer serviços de ghostwriting, criação de ebooks e muito mais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-darkgray to-dark">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                <span class="text-neonGreen">Não perca mais tempo</span> 
+                <span class="text-white">com prompts que não funcionam</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">Comece a lucrar com IA hoje mesmo usando prompts testados e aprovados no mercado.</p>
+            
+            <div class="bg-dark p-8 rounded-xl border-2 border-neonPink mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-left">
+                        <p class="text-gray-400 mb-2">Preço original: <span class="line-through text-gray-500">R$67</span></p>
+                        <p class="text-4xl font-bold text-neonPink">R$47</p>
+                        <p class="text-neonGreen text-sm mt-1">OFERTA EXCLUSIVA LANÇAMENTO!</p>
+                    </div>
+                    
+                    <div class="w-full md:w-auto">
+                        <a href="https://pay.hotmart.com/H100311726Q?checkoutMode=10" class="block w-full md:w-auto bg-neonPink hover:bg-pink-600 text-dark font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 pulse" target="_self">
+                            <i class="fas fa-bolt mr-2"></i> QUERO MEU KIT PRO AGORA!
+                        </a>
+                        <p class="text-xs text-gray-400 mt-2">Entrega imediata após a compra</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-gray-400 text-sm">
+                <i class="fas fa-lock mr-1"></i> Compra 100% segura • 7 dias de garantia • Acesso vitalício
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <p class="text-gray-500 text-sm">© 2025 KIT PRO - Todos os direitos reservados</p>
+                <p class="text-gray-600 text-xs mt-2">Este produto não garante resultados financeiros. Seu sucesso depende exclusivamente do seu esforço e dedicação.</p>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="#" class="text-gray-500 hover:text-neonGreen"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-neonBlue"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-neonPink"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ toggle functionality
+            const faqButtons = document.querySelectorAll('.faq-question');
+            
+            faqButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const faqItem = this.closest('.faq-item');
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle current answer
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                    
+                    // Close other FAQs
+                    faqButtons.forEach(otherButton => {
+                        if (otherButton !== button) {
+                            const otherItem = otherButton.closest('.faq-item');
+                            otherItem.querySelector('.faq-answer').classList.add('hidden');
+                            otherItem.querySelector('i').classList.remove('rotate-180');
+                        }
+                    });
+                });
+            });
+
+            // Countdown timer for urgency (example)
+            function updateCountdown() {
+                const now = new Date();
+                const hours = 23 - now.getHours();
+                const minutes = 59 - now.getMinutes();
+                const seconds = 59 - now.getSeconds();
+                
+                document.querySelectorAll('.countdown').forEach(el => {
+                    el.textContent = `${hours}h ${minutes}m ${seconds}s`;
+                });
+            }
+            
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=wendelltscn/kitpro" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
